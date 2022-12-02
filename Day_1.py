@@ -1,7 +1,7 @@
 ergebnisliste = []
 schleife = 0
 
-with open ("input_data.txt") as f:
+with open ("day_1.txt") as f:
     lines = f.readlines()
 
 for x in range(len(lines)):
