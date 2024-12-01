@@ -13,7 +13,6 @@ def partA():
     for i in range(len(arrOne)): #calculate the absolute difference between both literals
         distance += abs(int(arrOne[i]) - int(arrTwo[i]))
 
-    file.close() #close the opened file :)
     return distance
 
 def partB():
