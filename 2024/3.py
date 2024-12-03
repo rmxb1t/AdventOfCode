@@ -2,7 +2,7 @@ import re
 
 def partA():
     result = 0 #define result variable
-    with open('3_input.txt', 'r') as f: #open file
+    with open('input/3_input.txt', 'r') as f: #open file
         file = f.read() #read file
         x = re.findall("mul\([0-9]{1,3},[0-9]{1,3}\)", file) #find every mul in the string
         for ele in x: #loop through each finding (list object
@@ -12,7 +12,7 @@ def partA():
 
 def partB():
     result = 0  # define result variable
-    with open('3_input.txt', 'r') as f:  # open file
+    with open('input/3_input.txt', 'r') as f:  # open file
         file = f.read()  # read file
         y = re.sub(r"don\'t\(\).*?do\(\)", "", file, flags=re.DOTALL) #remove every part from don't() - do(), flag ignores \n
         x = re.findall("mul\([0-9]{1,3},[0-9]{1,3}\)", y)  # find every mul in the string

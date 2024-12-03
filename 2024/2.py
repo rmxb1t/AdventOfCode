@@ -1,5 +1,5 @@
 def partA():
-    with open('2_input.txt', 'r') as f: #open file
+    with open('input/2_input.txt', 'r') as f: #open file
         content = f.read().strip().split('\n') #read the file
 
     ans = 0 #result
@@ -17,4 +17,5 @@ def partA():
     print(ans)
 
 
-partA()
+partA() #not my code, but loved the solution
+#partB() unfortunately wasn't able to complete Part B :/

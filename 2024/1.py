@@ -2,7 +2,7 @@ def partA():
     arrOne = [] #define array one
     arrTwo = [] #define array two
     distance = 0 #varibale to keep track of the distance
-    with open("1_input.txt", "r") as file: #open input file as file
+    with open("input/1_input.txt", "r") as file: #open input file as file
         for line in file: #iterate through each line of the file
             arrOne.append(line[:5]) #cut away everything of the output besides the first 5 literals
             arrTwo.append(line[5:]) #cut away everything of the output besides the last 5 literals
@@ -19,7 +19,7 @@ def partB():
     arrOne = []  # define array one
     arrTwo = []  # define array two
     result = 0 #initialise the result
-    with open("1_input.txt", "r") as file:  # open input file as file
+    with open("input/1_input.txt", "r") as file:  # open input file as file
         for line in file:  # iterate through each line of the file
             arrOne.append(line[:5])  # cut away everything of the output besides the first 5 literals
             arrTwo.append(line[5:])  # cut away everything of the output besides the last 5 literals
